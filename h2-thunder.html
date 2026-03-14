@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>H2 Thunder Limo | Unique Rides Transportation</title>
+  <link rel="preconnect" href="https://static.wixstatic.com" crossorigin/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600;700&display=swap" media="print" onload="this.media='all'"/>
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600;700&display=swap"/></noscript>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Raleway', sans-serif; background: #fff; color: #222; }
+
+    .top-bar { background: #1a1a1a; color: #ccc; font-size: 12px; text-align: center; padding: 8px 20px; letter-spacing: 1px; }
+    .top-bar a { color: #ccc; text-decoration: none; }
+    .top-bar a:hover { color: #fff; }
+
+    header { background: #fff; border-bottom: 1px solid #e8e8e8; position: sticky; top: 0; z-index: 200; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 12px 32px; }
+    .nav-logo img { height: 72px; width: auto; object-fit: contain; }
+    .nav-links { display: flex; gap: 40px; list-style: none; }
+    .nav-links a { color: #222; text-decoration: none; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; padding-bottom: 4px; border-bottom: 2px solid transparent; transition: border-color 0.2s, color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: #7b2d8b; border-bottom-color: #7b2d8b; }
+    .nav-book { background: #7b2d8b; color: #fff !important; padding: 10px 28px !important; border-bottom: none !important; border-radius: 2px; }
+    .nav-book:hover { background: #5a1f68 !important; }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 16px; margin: -16px; min-width: 44px; min-height: 44px; align-items: center; justify-content: center; -webkit-tap-highlight-color: transparent; }
+    .hamburger span { display: block; width: 25px; height: 2px; background: #222; }
+    .mobile-nav{display:none;flex-direction:column;background:#fff;border-top:1px solid #eee;padding:20px 32px 28px;gap:20px}
+    .mobile-nav.open{display:flex!important}
+    .mobile-nav a { color: #222; text-decoration: none; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
+
+    /* HERO BANNER */
+    .page-hero {
+      background: #1a1a1a; color: #fff;
+      text-align: center; padding: 72px 32px 60px;
+      position: relative; overflow: hidden;
+    }
+    .page-hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, #7b2d8b22, transparent);
+    }
+    .page-hero .breadcrumb {
+      font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+      color: #c47ed4; margin-bottom: 16px; position: relative;
+    }
+    .page-hero .breadcrumb a { color: #c47ed4; text-decoration: none; }
+    .page-hero .breadcrumb a:hover { color: #fff; }
+    .page-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 5vw, 58px); font-weight: 700;
+      position: relative;
+    }
+
+    /* FEATURE SECTIONS — alternating image + text */
+    .feature {
+      display: grid; grid-template-columns: 1fr 1fr;
+      min-height: 420px; overflow: hidden;
+    }
+    .feature.reverse { direction: rtl; }
+    .feature.reverse > * { direction: ltr; }
+    .feature-img { overflow: hidden; }
+    .feature-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s; }
+    .feature-img:hover img { transform: scale(1.04); }
+    .feature-content {
+      padding: 64px 56px;
+      display: flex; flex-direction: column; justify-content: center;
+      background: #fff;
+    }
+    .feature:nth-child(even) .feature-content { background: #f9f9f9; }
+    .feature-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 72px; font-weight: 700; color: #f0e8f4;
+      line-height: 1; margin-bottom: -16px;
+    }
+    .feature-tag { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #7b2d8b; margin-bottom: 10px; }
+    .feature-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(22px, 3vw, 32px); font-weight: 700;
+      color: #1a1a1a; margin-bottom: 16px; line-height: 1.3;
+    }
+    .feature-divider { width: 48px; height: 3px; background: #7b2d8b; margin-bottom: 18px; }
+    .feature-content p { font-size: 15px; line-height: 1.9; color: #555; }
+
+    /* SERVICES STRIP */
+    .services-strip {
+      background: #7b2d8b; color: #fff;
+      padding: 80px 32px;
+    }
+    .services-strip-inner { max-width: 1100px; margin: 0 auto; }
+    .services-strip h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(24px, 3vw, 38px); font-weight: 700;
+      text-align: center; margin-bottom: 12px;
+    }
+    .services-strip .sub {
+      text-align: center; font-size: 15px; opacity: 0.85;
+      max-width: 620px; margin: 0 auto 52px; line-height: 1.7;
+    }
+    .services-cards {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .service-card {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 36px 28px; text-align: center;
+      transition: background 0.3s;
+    }
+    .service-card:hover { background: rgba(255,255,255,0.18); }
+    .service-card .s-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px; font-weight: 700;
+      color: rgba(255,255,255,0.25); line-height: 1; margin-bottom: 8px;
+    }
+    .service-card h3 { font-size: 14px; font-weight: 700; letter-spacing: 1px; margin-bottom: 12px; }
+    .service-card p { font-size: 13px; line-height: 1.7; opacity: 0.85; }
+
+    /* BOOK CTA */
+    .book-cta { background: #1a1a1a; color: #fff; text-align: center; padding: 80px 32px; }
+    .book-cta h2 { font-family: 'Playfair Display', serif; font-size: clamp(26px, 4vw, 44px); font-weight: 700; margin-bottom: 14px; }
+    .book-cta p { font-size: 15px; opacity: 0.75; margin-bottom: 36px; }
+    .btn-gold { display: inline-block; background: #7b2d8b; color: #fff; padding: 16px 48px; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: background 0.2s, transform 0.2s; }
+    .btn-gold:hover { background: #5a1f68; transform: translateY(-2px); }
+    .btn-outline { display: inline-block; border: 2px solid #fff; color: #fff; padding: 14px 40px; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; border-radius: 2px; margin-left: 16px; transition: all 0.2s; }
+    .btn-outline:hover { background: #fff; color: #1a1a1a; }
+
+    /* FOOTER */
+    footer { background: #111; color: #aaa; padding: 60px 32px 32px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; border-bottom: 1px solid #2a2a2a; padding-bottom: 48px; }
+    .footer-logo img { height: 72px; object-fit: contain; margin-bottom: 14px; filter: brightness(1.2); }
+    .footer-desc { font-size: 13px; line-height: 1.8; color: #888; }
+    .footer-col-title { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #fff; margin-bottom: 18px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul a { color: #888; text-decoration: none; font-size: 13px; transition: color 0.2s; }
+    .footer-col ul a:hover { color: #c47ed4; }
+    .footer-contact-list { display: flex; flex-direction: column; gap: 10px; }
+    .footer-contact-list a { color: #888; text-decoration: none; font-size: 13px; transition: color 0.2s; }
+    .footer-contact-list a:hover { color: #c47ed4; }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #555; flex-wrap: wrap; gap: 12px; }
+    .footer-socials a { color: #555; text-decoration: none; font-size: 12px; margin-left: 20px; transition: color 0.2s; }
+    .footer-socials a:hover { color: #c47ed4; }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .feature { grid-template-columns: 1fr; min-height: auto; }
+      .feature.reverse { direction: ltr; }
+      .feature-img { height: 300px; }
+      .feature-content { padding: 44px 28px; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .btn-outline { margin-left: 0; margin-top: 12px; display: block; }
+    }
+    @media (max-width: 600px) {
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <a href="tel:4178655600">📞 417-865-5600</a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="mailto:info@uniqueridestransportation.com">info@uniqueridestransportation.com</a>
+</div>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://static.wixstatic.com/media/e001a4_ceda23b85a0c4a229a413e20a2b051cd~mv2.jpg/v1/fill/w_980,h_968,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/business%20logo.jpg" alt="Unique Rides Transportation Logo" loading="lazy"/>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#fleet">Fleet</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="meet-the-limos.html" class="active">Meet The Limos</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="booking.html" class="nav-book">Book a Ride</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html#about" onclick="closeMobile()">About</a>
+    <a href="index.html#fleet" onclick="closeMobile()">Fleet</a>
+    <a href="index.html#services" onclick="closeMobile()">Services</a>
+    <a href="meet-the-limos.html" onclick="closeMobile()">Meet The Limos</a>
+    <a href="blog.html" onclick="closeMobile()">Blog</a>
+    <a href="booking.html" onclick="closeMobile()" style="color:#7b2d8b;">Book a Ride</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="page-hero">
+  <p class="breadcrumb"><a href="meet-the-limos.html">Meet The Limos</a> &nbsp;/&nbsp; H2 Thunder</p>
+  <h1>H2 Thunder Limo</h1>
+</div>
+
+<!-- FEATURE 1: Professional Chauffeur -->
+<div class="feature">
+  <div class="feature-img">
+    <img src="https://static.wixstatic.com/media/e001a4_f9989425e674413ebb917c169beb07fc~mv2.jpg/v1/fill/w_980,h_735,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/hummer%20limo%20leaves.jpg" alt="H2 Thunder Hummer Limo" loading="lazy"/>
+  </div>
+  <div class="feature-content">
+    <div class="feature-num">01</div>
+    <p class="feature-tag">Included with Every Ride</p>
+    <h2 class="feature-title">Professional Chauffeur</h2>
+    <div class="feature-divider"></div>
+    <p>Experience true peace of mind with our professional chauffeur at the wheel — trained, courteous, and dedicated to your safety and comfort. Sit back, relax, and enjoy the ride while we handle every detail with VIP-level service from start to finish.</p>
+  </div>
+</div>
+
+<!-- FEATURE 2: LED Interior Lighting -->
+<div class="feature reverse">
+  <div class="feature-img">
+    <img src="https://static.wixstatic.com/media/e001a4_4768bd28789b48fdb1cd85c8be87fc37~mv2.jpg/v1/fill/w_980,h_772,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/hummer%20and%20a%20big%20building.jpg" alt="H2 Thunder Hummer and Building" loading="lazy"/>
+  </div>
+  <div class="feature-content">
+    <div class="feature-num">02</div>
+    <p class="feature-tag">Set the Mood</p>
+    <h2 class="feature-title">LED Interior Lighting</h2>
+    <div class="feature-divider"></div>
+    <p>Experience true peace of mind with our professional chauffeur at the wheel — trained, courteous, and dedicated to your safety and comfort. Sit back, relax, and enjoy the ride while we handle every detail with VIP-level service from start to finish.</p>
+  </div>
+</div>
+
+<!-- FEATURE 3: Event Ready -->
+<div class="feature">
+  <div class="feature-img">
+    <img src="https://static.wixstatic.com/media/e001a4_a16c2f4704df49d985446241863790bf~mv2.jpg/v1/fill/w_980,h_735,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/H2%20From%20above%202.jpg" alt="H2 Thunder from above" loading="lazy"/>
+  </div>
+  <div class="feature-content">
+    <div class="feature-num">03</div>
+    <p class="feature-tag">Always Prepared</p>
+    <h2 class="feature-title">Event Ready</h2>
+    <div class="feature-divider"></div>
+    <p>The H2 Thunder arrives event-ready, perfectly prepped for any occasion — weddings, concerts, proms, or a night out on the town. From sparkling clean interiors to seamless scheduling, we make sure your big moments start the moment you step inside.</p>
+  </div>
+</div>
+
+<!-- SERVICES STRIP -->
+<div class="services-strip">
+  <div class="services-strip-inner">
+    <h2>SERVICES</h2>
+    <p class="sub">The H2 Thunder delivers a luxury group experience with onboard karaoke, convenience, climate control, and a professional chauffeur — perfect for any celebration or special event.</p>
+    <div class="services-cards">
+      <div class="service-card">
+        <div class="s-num">1</div>
+        <h3>Onboard Karaoke</h3>
+        <p>Unleash your inner superstar with our onboard karaoke system — sing, laugh, and create unforgettable memories with friends as you cruise in style. Every ride becomes a private party where you set the soundtrack.</p>
+      </div>
+      <div class="service-card">
+        <div class="s-num">2</div>
+        <h3>Climate Controlled</h3>
+        <p>No matter the weather outside, our climate-controlled cabin keeps you and your guests perfectly comfortable throughout your journey. Enjoy a cool escape in summer or a cozy retreat in winter.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BOOK CTA -->
+<div class="book-cta">
+  <h2>Ready to Ride in the H2 Thunder?</h2>
+  <p>Book your luxury Hummer limo experience today</p>
+  <a href="booking.html" class="btn-gold">Book a Ride / Get a Quote</a>
+  <a href="meet-the-limos.html" class="btn-outline">View All Limos</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo"><img src="https://static.wixstatic.com/media/e001a4_ceda23b85a0c4a229a413e20a2b051cd~mv2.jpg/v1/fill/w_980,h_968,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/business%20logo.jpg" alt="Unique Rides Transportation" loading="lazy"/></div>
+        <p class="footer-desc">Premier Limo Service in Springfield, Missouri and the surrounding 300-mile region. Rooted in Christian values, dedicated to professionalism, reliability, and first-class experiences.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Navigation</p>
+        <ul><li><a href="index.html#about">About</a></li><li><a href="index.html#fleet">Fleet</a></li><li><a href="index.html#services">Services</a></li><li><a href="meet-the-limos.html">Meet The Limos</a></li><li><a href="blog.html">Blog</a></li><li><a href="booking.html">Book a Ride</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Head Office</p>
+        <div class="footer-contact-list"><a href="tel:4178655600">417-865-5600</a><a href="mailto:info@uniqueridestransportation.com">info@uniqueridestransportation.com</a></div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Socials</p>
+        <ul><li><a href="https://www.facebook.com/profile.php?id=61565368734327" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/uniqueridestransportation" target="_blank" rel="noopener">Instagram</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 by Unique Rides Transportation</span>
+      <div class="footer-socials"><a href="https://www.facebook.com/profile.php?id=61565368734327" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.<        <a href="https://www.instagram.com/un
