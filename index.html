@@ -136,6 +136,18 @@
     .footer-bottom{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#888;flex-wrap:wrap;gap:12px}
     .footer-socials a{color:#888;text-decoration:none;font-size:12px;margin-left:20px;transition:color .2s}
     .footer-socials a:hover{color:#c47ed4}
+
+    .nav-dropdown{position:relative}
+    .nav-dropdown>a{display:flex;align-items:center;gap:5px;cursor:pointer}
+    .nav-dropdown>a::after{content:'';display:inline-block;width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid #222;transition:transform .2s;margin-top:2px}
+    .nav-dropdown:hover>a{color:var(--purple)}
+    .nav-dropdown:hover>a::after{border-top-color:var(--purple);transform:rotate(180deg)}
+    .dropdown-menu{display:none;position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid #ececec;box-shadow:0 8px 32px rgba(0,0,0,.1);min-width:210px;z-index:300;padding:8px 0}
+    .nav-dropdown:hover .dropdown-menu{display:block}
+    .dropdown-menu a{display:block;padding:10px 20px;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#222;text-decoration:none;white-space:nowrap;border-bottom:none!important;transition:background .15s,color .15s}
+    .dropdown-menu a:hover{background:#f9f9f9;color:var(--purple)}
+    .dropdown-divider{height:1px;background:#ececec;margin:4px 0}
+    .mobile-nav-label{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#aaa;padding:6px 0 2px;margin-top:4px}
     @media(max-width:960px){.nav-links{display:none}.hamburger{display:flex}.about-grid{grid-template-columns:1fr;gap:40px}.about-img{order:-1}.fleet-slide{min-width:50%}.services-grid{grid-template-columns:1fr}.testimonials-grid{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
     @media(max-width:600px){.hero{height:400px}section{padding:56px 20px}.fleet-slide{min-width:100%}.stats-row{flex-direction:column}.stat{border-right:none;border-bottom:1px solid #e0e0e0;padding:16px 0}.stat:last-child{border-bottom:none}.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}.nav-inner{padding:12px 20px}}
   </style>
@@ -146,14 +158,17 @@
   <div class="nav-inner">
     <a href="index.html" class="nav-logo"><img src="https://static.wixstatic.com/media/e001a4_ceda23b85a0c4a229a413e20a2b051cd~mv2.jpg/v1/fill/w_980,h_968,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/business%20logo.jpg" alt="Unique Rides Transportation Logo" width="72" height="72" fetchpriority="high"/></a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li><li><a href="#fleet">Fleet</a></li><li><a href="#services">Services</a></li><li><a href="meet-the-limos.html">Meet The Limos</a></li><li><a href="blog.html">Blog</a></li><li><a href="booking.html" class="nav-book">Book a Ride</a></li>
+      <li><a href="#about">About</a></li><li><a href="#fleet">Fleet</a></li><li class="nav-dropdown"><a href="#services">Services</a><div class="dropdown-menu"><a href="wedding-limo-springfield-mo.html">💒 Wedding Limos</a><a href="prom-limo-springfield-mo.html">🎓 Prom Limos</a><div class="dropdown-divider"></div><a href="#services">All Services</a></div></li><li><a href="meet-the-limos.html">Meet The Limos</a></li><li><a href="blog.html">Blog</a></li><li><a href="booking.html" class="nav-book">Book a Ride</a></li>
     </ul>
     <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
   <nav class="mobile-nav" id="mobileNav">
     <a href="#about" onclick="closeMobile()">About</a><a href="#fleet" onclick="closeMobile()">Fleet</a><a href="#services" onclick="closeMobile()">Services</a><a href="meet-the-limos.html" onclick="closeMobile()">Meet The Limos</a>
-    <a href="wedding-limo-springfield-mo.html" onclick="closeMobile()">Wedding Limos</a>
-    <a href="prom-limo-springfield-mo.html" onclick="closeMobile()">Prom Limos</a><a href="blog.html" onclick="closeMobile()">Blog</a><a href="booking.html" onclick="closeMobile()" style="color:var(--purple)">Book a Ride</a>
+    <div class="mobile-nav-label">Popular Services</div>
+    <a href="wedding-limo-springfield-mo.html" onclick="closeMobile()" style="color:var(--purple)">💒 Wedding Limos</a>
+    <a href="prom-limo-springfield-mo.html" onclick="closeMobile()" style="color:var(--purple)">🎓 Prom Limos</a>
+    <a href="blog.html" onclick="closeMobile()">Blog</a>
+    <a href="booking.html" onclick="closeMobile()" style="color:var(--purple)">Book a Ride</a>
   </nav>
 </header>
 <div class="hero">
