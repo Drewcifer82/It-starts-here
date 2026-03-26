@@ -100,18 +100,6 @@
     .footer-socials a { color: #555; text-decoration: none; font-size: 12px; margin-left: 20px; transition: color 0.2s; }
     .footer-socials a:hover { color: #c47ed4; }
 
-
-    .nav-dropdown{position:relative}
-    .nav-dropdown>a{display:flex;align-items:center;gap:5px;cursor:pointer}
-    .nav-dropdown>a::after{content:'';display:inline-block;width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid #222;transition:transform .2s;margin-top:2px}
-    .nav-dropdown:hover>a{color:var(--purple)}
-    .nav-dropdown:hover>a::after{border-top-color:var(--purple);transform:rotate(180deg)}
-    .dropdown-menu{display:none;position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid #ececec;box-shadow:0 8px 32px rgba(0,0,0,.1);min-width:210px;z-index:300;padding:8px 0}
-    .nav-dropdown:hover .dropdown-menu{display:block}
-    .dropdown-menu a{display:block;padding:10px 20px;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#222;text-decoration:none;white-space:nowrap;border-bottom:none!important;transition:background .15s,color .15s}
-    .dropdown-menu a:hover{background:#f9f9f9;color:var(--purple)}
-    .dropdown-divider{height:1px;background:#ececec;margin:4px 0}
-    .mobile-nav-label{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#aaa;padding:6px 0 2px;margin-top:4px}
     @media (max-width: 900px) {
       .nav-links { display: none; }
       .hamburger { display: flex; }
@@ -127,6 +115,38 @@
       .footer-bottom { flex-direction: column; text-align: center; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Pinkey Pink Limousine Springfield MO",
+  "description": "Pinkey is the only pink limousine in the 417 area. Features a custom LED exterior screen, onboard karaoke, LED interior lighting, and fits up to 10 passengers. Perfect for weddings, prom, and bachelorette parties in Springfield MO.",
+  "url": "https://www.uniqueridestransportation.com/pinkey.html",
+  "image": "https://static.wixstatic.com/media/e001a4_bb18715384b742ca9227e3916babcb5c~mv2.jpg/v1/fill/w_980,h_735,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/pinkey%20and%20a%20train.jpg",
+  "brand": {
+    "@type": "Brand",
+    "name": "Unique Rides Transportation"
+  },
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.209,
+        "longitude": -93.2923
+      },
+      "geoRadius": "480000"
+    },
+    "seller": {
+      "@type": "LimousineService",
+      "name": "Unique Rides Transportation",
+      "telephone": "+14178655600"
+    }
+  }
+}
+  </script>
 </head>
 <body>
 
@@ -144,7 +164,7 @@
     <ul class="nav-links">
       <li><a href="index.html#about">About</a></li>
       <li><a href="index.html#fleet">Fleet</a></li>
-      <li class="nav-dropdown"><a href="index.html#services">Services</a><div class="dropdown-menu"><a href="wedding-limo-springfield-mo.html">💒 Wedding Limos</a><a href="prom-limo-springfield-mo.html">🎓 Prom Limos</a><div class="dropdown-divider"></div><a href="index.html#services">All Services</a></div></li>
+      <li><a href="index.html#services">Services</a></li>
       <li><a href="meet-the-limos.html" class="active">Meet The Limos</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="booking.html" class="nav-book">Book a Ride</a></li>
