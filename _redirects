@@ -1,7 +1,4 @@
 # Netlify Redirects - Unique Rides Transportation
-# Force all non-www traffic to www (canonical URL fix)
-https://uniqueridestransportation.com/* https://www.uniqueridestransportation.com/:splat 301!
-
 # Old Wix blog /post/ URLs -> new .html pages (301 permanent)
 
 /post/create-unforgettable-birthday-memories-with-a-limo-ride-for-your-kid-birthday-at-unique-rides-transp  /blog-unforgettable-birthday-limo-for-kids.html  301
