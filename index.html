@@ -23,6 +23,27 @@
   <meta name="twitter:description" content="Springfield MO's premier luxury limo service for weddings, prom, airport transfers &amp; special events. Book online today."/>
   <meta name="twitter:image" content="https://static.wixstatic.com/media/e001a4_ceda23b85a0c4a229a413e20a2b051cd~mv2.jpg/v1/fill/w_980,h_968,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/business%20logo.jpg"/>
   <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LimousineService",
+    "name": "Unique Rides Transportation",
+    "description": "Premier luxury limo service in Springfield, Missouri. Weddings, prom, airport transfers, corporate transportation and special events.",
+    "url": "https://www.uniqueridestransportation.com",
+    "telephone": "+14178655600",
+    "email": "info@uniqueridestransportation.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Springfield",
+      "addressRegion": "MO",
+      "addressCountry": "US"
+    },
+    "areaServed": {"@type": "GeoCircle", "geoMidpoint": {"@type": "GeoCoordinates", "latitude": 37.2090, "longitude": -93.2923}, "geoRadius": "480000"},
+    "priceRange": "$$",
+    "openingHours": "Mo-Su 00:00-23:59",
+    "sameAs": ["https://www.facebook.com/profile.php?id=61565368734327","https://www.instagram.com/uniqueridestransportation"]
+  }
+  </script>
   <link rel="preconnect" href="https://static.wixstatic.com" crossorigin/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -121,8 +142,9 @@
     .nav-dropdown>a::after{content:'';display:inline-block;width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid #222;transition:transform .2s;margin-top:2px}
     .nav-dropdown:hover>a{color:var(--purple)}
     .nav-dropdown:hover>a::after{border-top-color:var(--purple);transform:rotate(180deg)}
-    .dropdown-menu{display:none;position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid #ececec;box-shadow:0 8px 32px rgba(0,0,0,.1);min-width:210px;z-index:300;padding:8px 0}
+    .dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#fff;border:1px solid #ececec;box-shadow:0 8px 32px rgba(0,0,0,.1);min-width:210px;z-index:300;padding:16px 0 8px}
     .nav-dropdown:hover .dropdown-menu{display:block}
+    .nav-dropdown>a::before{content:'';position:absolute;bottom:-16px;left:0;width:100%;height:16px}
     .dropdown-menu a{display:block;padding:10px 20px;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#222;text-decoration:none;white-space:nowrap;border-bottom:none!important;transition:background .15s,color .15s}
     .dropdown-menu a:hover{background:#f9f9f9;color:var(--purple)}
     .dropdown-divider{height:1px;background:#ececec;margin:4px 0}
@@ -130,175 +152,6 @@
     @media(max-width:960px){.nav-links{display:none}.hamburger{display:flex}.about-grid{grid-template-columns:1fr;gap:40px}.about-img{order:-1}.fleet-slide{min-width:50%}.services-grid{grid-template-columns:1fr}.testimonials-grid{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
     @media(max-width:600px){.hero{height:400px}section{padding:56px 20px}.fleet-slide{min-width:100%}.stats-row{flex-direction:column}.stat{border-right:none;border-bottom:1px solid #e0e0e0;padding:16px 0}.stat:last-child{border-bottom:none}.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}.nav-inner{padding:12px 20px}}
   </style>
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "LimousineService",
-  "name": "Unique Rides Transportation",
-  "alternateName": "Unique Rides",
-  "description": "Premier luxury limo service in Springfield, Missouri. Weddings, prom, airport transfers, corporate transportation and special events. Serving a 300-mile region.",
-  "url": "https://www.uniqueridestransportation.com",
-  "logo": "https://static.wixstatic.com/media/e001a4_ceda23b85a0c4a229a413e20a2b051cd~mv2.jpg/v1/fill/w_980,h_968,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/business%20logo.jpg",
-  "image": "https://static.wixstatic.com/media/e001a4_ceda23b85a0c4a229a413e20a2b051cd~mv2.jpg/v1/fill/w_980,h_968,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/business%20logo.jpg",
-  "telephone": "+14178655600",
-  "email": "info@uniqueridestransportation.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Springfield",
-    "addressRegion": "MO",
-    "addressCountry": "US"
-  },
-  "areaServed": {
-    "@type": "GeoCircle",
-    "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": 37.209,
-      "longitude": -93.2923
-    },
-    "geoRadius": "480000"
-  },
-  "priceRange": "$$",
-  "openingHours": "Mo-Su 00:00-23:59",
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Limo Services Springfield MO",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Wedding Limo Service Springfield MO",
-          "url": "https://www.uniqueridestransportation.com/wedding-limo-springfield-mo.html"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Prom Limo Service Springfield MO",
-          "url": "https://www.uniqueridestransportation.com/prom-limo-springfield-mo.html"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Airport Limo Transfer Springfield MO"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Corporate Limo Service Springfield MO"
-        }
-      }
-    ]
-  },
-  "sameAs": [
-    "https://www.facebook.com/profile.php?id=61565368734327",
-    "https://www.instagram.com/uniqueridestransportation"
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "reviewCount": "40",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Robert Wattles"
-      },
-      "reviewBody": "Our experience with Kevin was nothing short of incredible. The limo was beautiful, the driving was flawless, and the hospitality was exceptional."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Melina Batycki"
-      },
-      "reviewBody": "Wow!! What a remarkable company! Communication was top notch, limo was sleek. All around one of the best companies I've dealt with."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Cathy Marriott"
-      },
-      "reviewBody": "What an amazing night!! Kevin is the best! His attention to detail, kindness, and fun attitude made the experience one of the most memorable possible!"
-    }
-  ]
-}
-  </script>
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Unique Rides Transportation",
-  "url": "https://www.uniqueridestransportation.com",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://www.uniqueridestransportation.com/blog.html?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-  </script>
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What limo services does Unique Rides Transportation offer in Springfield MO?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Unique Rides Transportation offers wedding limos, prom limos, airport transfers, corporate transportation, and special event limo rentals in Springfield MO and the surrounding 300-mile region."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does a limo cost in Springfield MO?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Limo pricing in Springfield MO varies based on the vehicle, hours needed, and event type. Contact Unique Rides Transportation at 417-865-5600 for a free personalized quote."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What areas does Unique Rides Transportation serve?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Unique Rides Transportation serves Springfield MO and the surrounding 300-mile region, including Branson, Joplin, Nixa, Ozark, Republic, the Lake of the Ozarks, and beyond."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What vehicles does Unique Rides Transportation have?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Unique Rides Transportation offers three luxury vehicles: The Executive (Chrysler 300 limo), Pinkey (the only pink limo in the 417 area), and the H2 Thunder Hummer limo."
-      }
-    }
-  ]
-}
-  </script>
 </head>
 <body>
 <div class="top-bar"><a href="tel:4178655600">📞 417-865-5600</a> &nbsp;|&nbsp; <a href="mailto:info@uniqueridestransportation.com">info@uniqueridestransportation.com</a></div>
