@@ -1,6 +1,13 @@
 [build]
   publish = "."
 
+# Automatically inject Plausible analytics into every HTML page
+[[snippets]]
+  context = "production"
+  location = "head"
+  contents = """<script async src="https://plausible.io/js/pa-EI7McWiF2B0qqMle0_orF.js"></script><script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>"""
+
+# Image caching
 [[headers]]
   for = "/*.jpg"
   [headers.values]
