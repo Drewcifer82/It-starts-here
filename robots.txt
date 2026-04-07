@@ -1,8 +1,4 @@
-# robots.txt - Unique Rides Transportation
-# https://www.uniqueridestransportation.com
-
 User-agent: *
 Allow: /
 
-# Sitemap location
 Sitemap: https://www.uniqueridestransportation.com/sitemap.xml
