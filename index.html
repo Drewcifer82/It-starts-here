@@ -152,24 +152,25 @@
     @media(max-width:960px){.nav-links{display:none}.hamburger{display:flex}.about-grid{grid-template-columns:1fr;gap:40px}.about-img{order:-1}.fleet-slide{min-width:50%}.services-grid{grid-template-columns:1fr}.testimonials-grid{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
     @media(max-width:600px){.hero{height:400px}section{padding:56px 20px}.fleet-slide{min-width:100%}.stats-row{flex-direction:column}.stat{border-right:none;border-bottom:1px solid #e0e0e0;padding:16px 0}.stat:last-child{border-bottom:none}.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}.nav-inner{padding:12px 20px}}
   </style>
+  <script defer data-domain="uniqueridestransportation.com" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
 <div class="top-bar"><a href="tel:4178655600">📞 417-865-5600</a> &nbsp;|&nbsp; <a href="mailto:info@uniqueridestransportation.com">info@uniqueridestransportation.com</a></div>
 <header>
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><img src="https://static.wixstatic.com/media/e001a4_ceda23b85a0c4a229a413e20a2b051cd~mv2.jpg/v1/fill/w_980,h_968,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/business%20logo.jpg" alt="Unique Rides Transportation Logo" width="72" height="72" fetchpriority="high"/></a>
+    <a class='nav-logo' href='/'><img src="https://static.wixstatic.com/media/e001a4_ceda23b85a0c4a229a413e20a2b051cd~mv2.jpg/v1/fill/w_980,h_968,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/business%20logo.jpg" alt="Unique Rides Transportation Logo" width="72" height="72" fetchpriority="high"/></a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li><li><a href="#fleet">Fleet</a></li><li class="nav-dropdown"><a href="#services">Services</a><div class="dropdown-menu"><a href="wedding-limo-springfield-mo.html">💒 Wedding Limos</a><a href="prom-limo-springfield-mo.html">🎓 Prom Limos</a><div class="dropdown-divider"></div><a href="#services">All Services</a></div></li><li><a href="meet-the-limos.html">Meet The Limos</a></li><li><a href="blog.html">Blog</a></li><li><a href="booking.html" class="nav-book">Book a Ride</a></li>
+      <li><a href="#about">About</a></li><li><a href="#fleet">Fleet</a></li><li class="nav-dropdown"><a href="#services">Services</a><div class="dropdown-menu"><a href='/wedding-limo-springfield-mo'>💒 Wedding Limos</a><a href='/prom-limo-springfield-mo'>🎓 Prom Limos</a><div class="dropdown-divider"></div><a href="#services">All Services</a></div></li><li><a href='/meet-the-limos'>Meet The Limos</a></li><li><a href='/blog'>Blog</a></li><li><a class='nav-book' href='/booking'>Book a Ride</a></li>
     </ul>
     <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
   <nav class="mobile-nav" id="mobileNav">
-    <a href="#about" onclick="closeMobile()">About</a><a href="#fleet" onclick="closeMobile()">Fleet</a><a href="#services" onclick="closeMobile()">Services</a><a href="meet-the-limos.html" onclick="closeMobile()">Meet The Limos</a>
+    <a href="#about" onclick="closeMobile()">About</a><a href="#fleet" onclick="closeMobile()">Fleet</a><a href="#services" onclick="closeMobile()">Services</a><a href='/meet-the-limos' onclick='closeMobile()'>Meet The Limos</a>
     <div class="mobile-nav-label">Popular Services</div>
-    <a href="wedding-limo-springfield-mo.html" onclick="closeMobile()" style="color:var(--purple)">💒 Wedding Limos</a>
-    <a href="prom-limo-springfield-mo.html" onclick="closeMobile()" style="color:var(--purple)">🎓 Prom Limos</a>
-    <a href="blog.html" onclick="closeMobile()">Blog</a>
-    <a href="booking.html" onclick="closeMobile()" style="color:var(--purple)">Book a Ride</a>
+    <a href='/wedding-limo-springfield-mo' onclick='closeMobile()' style='color:var(--purple)'>💒 Wedding Limos</a>
+    <a href='/prom-limo-springfield-mo' onclick='closeMobile()' style='color:var(--purple)'>🎓 Prom Limos</a>
+    <a href='/blog' onclick='closeMobile()'>Blog</a>
+    <a href='/booking' onclick='closeMobile()' style='color:var(--purple)'>Book a Ride</a>
   </nav>
 </header>
 <div class="hero">
@@ -177,7 +178,7 @@
   <div class="hero-overlay">
     <h1>Springfield MO's #1 Limo Service &amp;<br>Luxury Transportation</h1>
     <p>Travel with Experienced, Trusted Chauffeurs in<br>Unique Rides Transportation, Premium Limo Service</p>
-    <a href="booking.html" class="btn-hero">Book a Ride / Quote</a>
+    <a class='btn-hero' href='/booking'>Book a Ride / Quote</a>
   </div>
 </div>
 <section id="about" class="about">
@@ -217,7 +218,7 @@
       <button class="fleet-dot" onclick="goSlide(1)" aria-label="Slide 2"></button>
       <button class="fleet-dot" onclick="goSlide(2)" aria-label="Slide 3"></button>
     </div>
-    <div style="text-align:center;margin-top:32px;"><a href="meet-the-limos.html" class="btn-hero" style="background:var(--dark)">Meet The Limos</a></div>
+    <div style="text-align:center;margin-top:32px;"><a class='btn-hero' href='/meet-the-limos' style='background:var(--dark)'>Meet The Limos</a></div>
   </div>
 </section>
 <section id="services" class="services">
@@ -231,11 +232,11 @@
     <div class="services-grid">
       <div class="service-card"><div class="service-icon">💼</div><h3>Corporate Limo &amp; Executive Transportation</h3><p>Discreet, punctual, and executive-level travel for professionals who value reliability and comfort. Whether for meetings, airport transfers, or client travel, we deliver a polished experience that reflects your standards.</p></div>
       <div class="service-card"><div class="service-icon">🎩</div><h3>Professional Chauffeur Service Springfield MO</h3><p>Professional, courteous drivers committed to safety, discretion, and exceptional service. Each ride is guided by integrity, attention to detail, and a dedication to making every journey smooth and stress-free.</p></div>
-      <div class="service-card"><div class="service-icon">✈️</div><h3>Springfield Airport Limo &amp; Transfer Service</h3><p>Timely, stress-free travel to and from the airport with professional chauffeurs and luxury vehicles. We monitor flight schedules and prioritize reliability, comfort, and peace of mind from pickup to drop-off.</p><a href="booking.html" style="display:inline-block;margin-top:14px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--purple);text-decoration:none;border-bottom:2px solid var(--purple);padding-bottom:2px;">Get a Quote &rarr;</a></div>
-      <div class="service-card"><div class="service-icon">💒</div><h3>Wedding Limo Service Springfield MO</h3><p>Elegant, reliable wedding transportation for your most important day. Choose from The Executive, Pinkey, or the H2 Thunder Hummer. Professional chauffeurs, immaculate vehicles.</p><a href="wedding-limo-springfield-mo.html" style="display:inline-block;margin-top:14px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--purple);text-decoration:none;border-bottom:2px solid var(--purple);padding-bottom:2px;">Wedding Limos &rarr;</a></div>
-      <div class="service-card"><div class="service-icon">🎓</div><h3>Prom Limo Rentals Springfield MO</h3><p>Make prom night unforgettable with Springfield's most exciting limos. Hummer limo, pink limo & luxury Chrysler 300. Safe, fun, and professionally chauffeured.</p><a href="prom-limo-springfield-mo.html" style="display:inline-block;margin-top:14px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--purple);text-decoration:none;border-bottom:2px solid var(--purple);padding-bottom:2px;">Prom Limos &rarr;</a></div>
+      <div class="service-card"><div class="service-icon">✈️</div><h3>Springfield Airport Limo &amp; Transfer Service</h3><p>Timely, stress-free travel to and from the airport with professional chauffeurs and luxury vehicles. We monitor flight schedules and prioritize reliability, comfort, and peace of mind from pickup to drop-off.</p><a href='/booking' style='display:inline-block;margin-top:14px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--purple);text-decoration:none;border-bottom:2px solid var(--purple);padding-bottom:2px;'>Get a Quote &rarr;</a></div>
+      <div class="service-card"><div class="service-icon">💒</div><h3>Wedding Limo Service Springfield MO</h3><p>Elegant, reliable wedding transportation for your most important day. Choose from The Executive, Pinkey, or the H2 Thunder Hummer. Professional chauffeurs, immaculate vehicles.</p><a href='/wedding-limo-springfield-mo' style='display:inline-block;margin-top:14px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--purple);text-decoration:none;border-bottom:2px solid var(--purple);padding-bottom:2px;'>Wedding Limos &rarr;</a></div>
+      <div class="service-card"><div class="service-icon">🎓</div><h3>Prom Limo Rentals Springfield MO</h3><p>Make prom night unforgettable with Springfield's most exciting limos. Hummer limo, pink limo & luxury Chrysler 300. Safe, fun, and professionally chauffeured.</p><a href='/prom-limo-springfield-mo' style='display:inline-block;margin-top:14px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--purple);text-decoration:none;border-bottom:2px solid var(--purple);padding-bottom:2px;'>Prom Limos &rarr;</a></div>
     </div>
-    <div style="text-align:center;margin-top:44px;"><a href="booking.html" class="btn-hero">Book a Ride / Quote</a></div>
+    <div style="text-align:center;margin-top:44px;"><a class='btn-hero' href='/booking'>Book a Ride / Quote</a></div>
   </div>
 </section>
 <section class="testimonials">
@@ -255,7 +256,7 @@
 <section class="book-cta">
   <h2>Book a Limo in Springfield, MO Today</h2>
   <p>Award-worthy limousine service for weddings, prom, airport transfers, and corporate travel across Springfield, Missouri and beyond</p>
-  <a href="booking.html" class="btn-white">Book a Ride / Get a Quote</a>
+  <a class='btn-white' href='/booking'>Book a Ride / Get a Quote</a>
 </section>
 <footer>
   <div class="footer-inner">
@@ -264,7 +265,7 @@
         <div class="footer-logo"><img src="https://static.wixstatic.com/media/e001a4_ceda23b85a0c4a229a413e20a2b051cd~mv2.jpg/v1/fill/w_980,h_968,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/business%20logo.jpg" alt="Unique Rides Transportation" width="72" height="72" loading="lazy"/></div>
         <p class="footer-desc">Premier Limo Service in Springfield, Missouri and the surrounding 300-mile region. Rooted in Christian values, dedicated to professionalism, reliability, and first-class experiences.</p>
       </div>
-      <div class="footer-col"><p class="footer-col-title">Navigation</p><ul><li><a href="index.html#about">About</a></li><li><a href="index.html#fleet">Fleet</a></li><li><a href="meet-the-limos.html">Meet The Limos</a></li><li><a href="blog.html">Blog</a></li><li><a href="booking.html">Book a Ride</a></li></ul></div><div class="footer-col"><p class="footer-col-title">Services</p><ul><li><a href="wedding-limo-springfield-mo.html">Wedding Limos</a></li><li><a href="prom-limo-springfield-mo.html">Prom Limos</a></li><li><a href="h2-thunder.html">H2 Thunder Hummer</a></li><li><a href="pinkey.html">Pinkey Pink Limo</a></li><li><a href="the-executive.html">The Executive</a></li></ul></div>
+      <div class="footer-col"><p class="footer-col-title">Navigation</p><ul><li><a href='/#about'>About</a></li><li><a href='/#fleet'>Fleet</a></li><li><a href='/meet-the-limos'>Meet The Limos</a></li><li><a href='/blog'>Blog</a></li><li><a href='/booking'>Book a Ride</a></li></ul></div><div class="footer-col"><p class="footer-col-title">Services</p><ul><li><a href='/wedding-limo-springfield-mo'>Wedding Limos</a></li><li><a href='/prom-limo-springfield-mo'>Prom Limos</a></li><li><a href='/h2-thunder'>H2 Thunder Hummer</a></li><li><a href='/pinkey'>Pinkey Pink Limo</a></li><li><a href='/the-executive'>The Executive</a></li></ul></div>
       <div class="footer-col"><p class="footer-col-title">Head Office</p><div class="footer-contact-list"><a href="tel:4178655600">417-865-5600</a><a href="mailto:info@uniqueridestransportation.com">info@uniqueridestransportation.com</a></div></div>
       <div class="footer-col"><p class="footer-col-title">Socials</p><ul><li><a href="https://www.facebook.com/profile.php?id=61565368734327" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/uniqueridestransportation" target="_blank" rel="noopener">Instagram</a></li></ul></div>
     </div>

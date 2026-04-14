@@ -141,6 +141,7 @@
     @media(max-width:960px){.nav-links{display:none}.hamburger{display:flex}.intro-grid{grid-template-columns:1fr;gap:40px}.vehicles-grid{grid-template-columns:1fr 1fr}.features-grid{grid-template-columns:1fr 1fr}.parents-grid{grid-template-columns:1fr;gap:40px}.t-grid{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}.trust-inner{gap:20px}}
     @media(max-width:600px){.hero{height:420px}.vehicles-grid{grid-template-columns:1fr}.features-grid{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}.nav-inner{padding:12px 20px}}
   </style>
+  <script defer data-domain="uniqueridestransportation.com" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
 
@@ -152,29 +153,29 @@
 
 <header>
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><img src="https://static.wixstatic.com/media/e001a4_ceda23b85a0c4a229a413e20a2b051cd~mv2.jpg/v1/fill/w_980,h_968,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/business%20logo.jpg" alt="Unique Rides Transportation Logo" width="72" height="72" fetchpriority="high"/></a>
+    <a class='nav-logo' href='/'><img src="https://static.wixstatic.com/media/e001a4_ceda23b85a0c4a229a413e20a2b051cd~mv2.jpg/v1/fill/w_980,h_968,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/business%20logo.jpg" alt="Unique Rides Transportation Logo" width="72" height="72" fetchpriority="high"/></a>
     <ul class="nav-links">
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#fleet">Fleet</a></li>
-      <li><a href="index.html#services">Services</a></li>
-      <li><a href="meet-the-limos.html">Meet The Limos</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="booking.html" class="nav-book">Book a Ride</a></li>
+      <li><a href='/#about'>About</a></li>
+      <li><a href='/#fleet'>Fleet</a></li>
+      <li><a href='/#services'>Services</a></li>
+      <li><a href='/meet-the-limos'>Meet The Limos</a></li>
+      <li><a href='/blog'>Blog</a></li>
+      <li><a class='nav-book' href='/booking'>Book a Ride</a></li>
     </ul>
     <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
   <nav class="mobile-nav" id="mobileNav">
-    <a href="index.html#about" onclick="closeMobile()">About</a>
-    <a href="index.html#fleet" onclick="closeMobile()">Fleet</a>
-    <a href="index.html#services" onclick="closeMobile()">Services</a>
-    <a href="meet-the-limos.html" onclick="closeMobile()">Meet The Limos</a>
-    <a href="blog.html" onclick="closeMobile()">Blog</a>
-    <a href="booking.html" onclick="closeMobile()" style="color:var(--purple)">Book a Ride</a>
+    <a href='/#about' onclick='closeMobile()'>About</a>
+    <a href='/#fleet' onclick='closeMobile()'>Fleet</a>
+    <a href='/#services' onclick='closeMobile()'>Services</a>
+    <a href='/meet-the-limos' onclick='closeMobile()'>Meet The Limos</a>
+    <a href='/blog' onclick='closeMobile()'>Blog</a>
+    <a href='/booking' onclick='closeMobile()' style='color:var(--purple)'>Book a Ride</a>
   </nav>
 </header>
 
 <div class="urgency-bar">
-  🎓 Prom season is here — vehicles are booking fast! <a href="booking.html">Secure your prom limo now →</a>
+  🎓 Prom season is here — vehicles are booking fast! <a href='/booking'>Secure your prom limo now →</a>
 </div>
 
 <div class="hero">
@@ -183,7 +184,7 @@
     <p class="hero-tag">Springfield MO Prom Transportation</p>
     <h1>Prom Limo Service in<br>Springfield, Missouri</h1>
     <p>Give your teen the prom entrance they deserve. Safe, fun, and unforgettable prom night transportation with Springfield MO's most unique luxury limos.</p>
-    <a href="booking.html" class="btn-hero">Book Your Prom Limo</a>
+    <a class='btn-hero' href='/booking'>Book Your Prom Limo</a>
   </div>
 </div>
 
@@ -238,7 +239,7 @@
           <p class="vehicle-capacity">Up to 14 Passengers — Most Popular for Prom!</p>
           <h3>H2 Thunder — The Ultimate Prom Hummer Limo</h3>
           <p>The most popular prom limo in Springfield MO. The H2 Thunder Hummer fits the whole group and arrives in a way nobody forgets. LED lighting, karaoke, climate control, and a professional chauffeur make this the ultimate prom night experience.</p>
-          <a href="h2-thunder.html" class="btn-sm">View Vehicle</a>
+          <a class='btn-sm' href='/h2-thunder'>View Vehicle</a>
         </div>
       </div>
       <div class="vehicle-card">
@@ -247,7 +248,7 @@
           <p class="vehicle-capacity">Up to 10 Passengers — One of a Kind!</p>
           <h3>Pinkey — The Only Pink Prom Limo in the 417</h3>
           <p>There is literally no other pink limo in the 417 area. Pinkey turns heads everywhere she goes — perfect for the prom group that wants something completely unique. Custom LED exterior screen, karaoke, and your own professional chauffeur.</p>
-          <a href="pinkey.html" class="btn-sm">View Vehicle</a>
+          <a class='btn-sm' href='/pinkey'>View Vehicle</a>
         </div>
       </div>
       <div class="vehicle-card">
@@ -256,12 +257,12 @@
           <p class="vehicle-capacity">Up to 8 Passengers — Classic Elegance</p>
           <h3>The Executive — Sleek Chrysler 300 Prom Limo</h3>
           <p>For the prom group that wants classic luxury over flash, The Executive Chrysler 300 delivers timeless style. LED interior lighting, leather seating, and a polished professional chauffeur for a sophisticated prom night arrival.</p>
-          <a href="the-executive.html" class="btn-sm">View Vehicle</a>
+          <a class='btn-sm' href='/the-executive'>View Vehicle</a>
         </div>
       </div>
     </div>
     <div style="text-align:center;margin-top:40px;">
-      <a href="booking.html" class="btn-sm" style="padding:14px 40px;font-size:13px;">Reserve Your Prom Limo Today</a>
+      <a class='btn-sm' href='/booking' style='padding:14px 40px;font-size:13px;'>Reserve Your Prom Limo Today</a>
     </div>
   </div>
 </section>
@@ -402,7 +403,7 @@
 <section class="cta-final">
   <h2>Book Your Springfield MO Prom Limo Now</h2>
   <p>Prom season is here and vehicles are going fast. Don't miss out — secure your prom limo today and give your teen a night they'll never forget.</p>
-  <a href="booking.html" class="btn-white">Book Online Now</a>
+  <a class='btn-white' href='/booking'>Book Online Now</a>
   <a href="tel:4178655600" class="btn-outline">Call 417-865-5600</a>
 </section>
 
@@ -413,7 +414,7 @@
         <div class="footer-logo"><img src="https://static.wixstatic.com/media/e001a4_ceda23b85a0c4a229a413e20a2b051cd~mv2.jpg/v1/fill/w_980,h_968,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/business%20logo.jpg" alt="Unique Rides Transportation" width="72" height="72" loading="lazy"/></div>
         <p class="footer-desc">Premier Limo Service in Springfield, Missouri and the surrounding 300-mile region. Rooted in Christian values, dedicated to professionalism, reliability, and first-class experiences.</p>
       </div>
-      <div class="footer-col"><p class="footer-col-title">Navigation</p><ul><li><a href="index.html#about">About</a></li><li><a href="index.html#fleet">Fleet</a></li><li><a href="index.html#services">Services</a></li><li><a href="meet-the-limos.html">Meet The Limos</a></li><li><a href="blog.html">Blog</a></li><li><a href="booking.html">Book a Ride</a></li></ul></div>
+      <div class="footer-col"><p class="footer-col-title">Navigation</p><ul><li><a href='/#about'>About</a></li><li><a href='/#fleet'>Fleet</a></li><li><a href='/#services'>Services</a></li><li><a href='/meet-the-limos'>Meet The Limos</a></li><li><a href='/blog'>Blog</a></li><li><a href='/booking'>Book a Ride</a></li></ul></div>
       <div class="footer-col"><p class="footer-col-title">Head Office</p><div class="footer-contact-list"><a href="tel:4178655600">417-865-5600</a><a href="mailto:info@uniqueridestransportation.com">info@uniqueridestransportation.com</a></div></div>
       <div class="footer-col"><p class="footer-col-title">Socials</p><ul><li><a href="https://www.facebook.com/profile.php?id=61565368734327" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/uniqueridestransportation" target="_blank" rel="noopener">Instagram</a></li></ul></div>
     </div>
