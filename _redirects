@@ -1,1 +1,5 @@
+# Force non-www to www (301) so Google treats the www host as canonical
+https://uniqueridestransportation.com/*    https://www.uniqueridestransportation.com/:splat    301!
+http://uniqueridestransportation.com/*     https://www.uniqueridestransportation.com/:splat    301!
+
 /js/pa-EI7McWiF2B0qqMle0_orF.js  https://plausible.io/js/pa-EI7McWiF2B0qqMle0_orF.js  200
