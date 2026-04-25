@@ -1,0 +1,18 @@
+# Normalize line endings to LF on commit, leave checkout as-is
+* text=auto
+
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.xml  text eol=lf
+*.txt  text eol=lf
+*.json text eol=lf
+
+# Binary files — no line ending conversion
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.pdf  binary
