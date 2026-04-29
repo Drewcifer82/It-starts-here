@@ -9,21 +9,21 @@
 
 # Image caching
 [[headers]]
-  for = "/*.jpg"
+  for = "/images/*.jpg"
   [headers.values]
     Cache-Control = "public, max-age=604800, must-revalidate"
 
 [[headers]]
-  for = "/*.jpeg"
+  for = "/images/*.jpeg"
   [headers.values]
     Cache-Control = "public, max-age=604800, must-revalidate"
 
 [[headers]]
-  for = "/*.png"
+  for = "/images/*.png"
   [headers.values]
     Cache-Control = "public, max-age=604800, must-revalidate"
 
 [[headers]]
-  for = "/*.webp"
+  for = "/images/*.webp"
   [headers.values]
     Cache-Control = "public, max-age=604800, must-revalidate"
