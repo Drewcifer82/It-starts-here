@@ -31,7 +31,7 @@
     <loc>https://www.uniqueridestransportation.com/blog.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-05-03</lastmod>
   </url>
 
   <!-- Vehicle Pages -->
@@ -53,6 +53,24 @@
 
   <!-- Blog Posts -->
   <url>
+    <loc>https://www.uniqueridestransportation.com/blog/blog-route-66-centennial-limo-springfield-mo.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.uniqueridestransportation.com/blog/blog-graduation-limo-springfield-mo.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.uniqueridestransportation.com/blog/blog-prepping-for-your-wedding-day-limo-springfield-mo.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-25</lastmod>
+  </url>
+  <url>
     <loc>https://www.uniqueridestransportation.com/blog/blog-branson-airport-shuttle-hummer-limo.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
@@ -63,6 +81,12 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-04-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.uniqueridestransportation.com/blog/blog-prom-limo-springfield-mo.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-04-17</lastmod>
   </url>
   <url>
     <loc>https://www.uniqueridestransportation.com/blog/blog-airport-limo-service-springfield-mo.html</loc>
@@ -81,6 +105,12 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
     <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.uniqueridestransportation.com/blog/blog-prom-limo-parent-after-party-springfield-mo.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-03-01</lastmod>
   </url>
   <url>
     <loc>https://www.uniqueridestransportation.com/blog/blog-getting-ready-for-prom-season.html</loc>
@@ -201,29 +231,6 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
     <lastmod>2025-12-14</lastmod>
-  </url>
-  <url>
-    <loc>https://www.uniqueridestransportation.com/blog/blog-prom-limo-springfield-mo.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-    <lastmod>2026-04-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.uniqueridestransportation.com/blog/blog-prom-limo-parent-after-party-springfield-mo.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-    <lastmod>2026-03-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.uniqueridestransportation.com/blog/blog-prepping-for-your-wedding-day-limo-springfield-mo.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-25</lastmod>
-  </url>
-  <url>
-    <loc>https://www.uniqueridestransportation.com/blog/blog-graduation-limo-springfield-mo.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
   </url>
 
 </urlset>
