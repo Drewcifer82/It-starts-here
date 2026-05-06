@@ -16,6 +16,9 @@
 html { scroll-behavior: smooth; }
 body { font-family: var(--sans); background: #fff; color: #222; }
 
+/* Reserve header space before JS loads to prevent layout shift (CLS) */
+[data-include="/components/header.html"] { display: block; min-height: 131px; }
+
 /* ---- Top bar ---- */
 .top-bar { background: var(--dark); color: #ccc; font-size: 12px; text-align: center; padding: 8px 20px; letter-spacing: 1px; }
 .top-bar a { color: #ccc; text-decoration: none; }
