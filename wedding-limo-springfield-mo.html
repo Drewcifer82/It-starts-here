@@ -18,7 +18,7 @@
   <meta property="og:title" content="Wedding Limo Springfield MO | Unique Rides Transportation"/>
   <meta property="og:description" content="Springfield MO's premier wedding limo service. The Executive, Pinkey & H2 Thunder Hummer. Professional chauffeurs for your perfect day. Book today."/>
   <meta property="og:url" content="https://www.uniqueridestransportation.com/wedding-limo-springfield-mo.html"/>
-  <meta property="og:image" content="images/e001a4_43f91042da3744d9885fc4530782072f~mv2.jpg"/>
+  <meta property="og:image" content="https://www.uniqueridestransportation.com/images/wedding-pinkey-photo.jpg"/>
   <meta property="og:site_name" content="Unique Rides Transportation"/>
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="Wedding Limo Springfield MO | Unique Rides Transportation"/>
@@ -377,7 +377,14 @@
 
 <div data-include="/components/footer.html"></div>
 <script src="/js/includes.js"></script>
-
+<script>
+function toggleFaq(el) {
+  var ans = el.nextElementSibling;
+  var span = el.querySelector('span');
+  ans.classList.toggle('open');
+  span.textContent = ans.classList.contains('open') ? '−' : '+';
+}
+</script>
 </body>
 </html>
 
